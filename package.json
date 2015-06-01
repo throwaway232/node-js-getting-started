@@ -4,10 +4,11 @@
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node_modules/.bin/coffee index.coffee"
   },
   "dependencies": {
-    "express": "~4.9.x"
+    "coffee-script", "1.9.3",
+    "hyperweb": "0.0.0"
   },
   "engines": {
     "node": "0.12.2"

@@ -2,7 +2,7 @@ H = require "hyperweb"
 H.blastOff()
 
 get '/', ->
-  'It worked!'
+  'Hello to the demo!'
 
 get '/:name/:value', (name, value) ->
   H.email "danielx@fogcreek.com",

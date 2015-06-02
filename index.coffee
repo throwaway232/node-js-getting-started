@@ -2,7 +2,7 @@ H = require "hyperweb"
 H.blastOff()
 
 get '/', ->
-  'It really worked!'
+  'Hello FogCreek!'
 
 post '/:name', (name, data) ->
   H.data.set name, data

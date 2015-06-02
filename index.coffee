@@ -13,6 +13,7 @@ get '/:name', (name) ->
   H.data(name)
 
 get '/notify', ->
-  H.email "danielx@fogcreek.com",
-    text: "I'm visiting the URL"
+  H.email "danielx@fogcreek.com", {
+    text: "I'm visiting the URL",
     subject: "Hello from HyperWeb"
+  }

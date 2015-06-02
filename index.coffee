@@ -11,5 +11,10 @@ get '/:name/:value', (name, value) ->
 
   H.data(name, value)
 
+post '/:name', (name, data) ->
+  H.data.set name, data
+  .then ->
+    "#{name} was set to #{data}"
+
 get '/:name', (name) ->
   H.data(name)

@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "coffee-script": "1.9.3",
+    "foreman": "1.3.0",
     "hyperweb": "0.0.1"
   },
   "engines": {

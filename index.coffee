@@ -11,10 +11,3 @@ post '/:name', (name, data) ->
 
 get '/:name', (name) ->
   H.data(name)
-
-get '/notify', ->
-  H.email "danielx@fogcreek.com",
-    subject: "HyperWeb"
-    text: "hey I went to the /notify url"
-  .then ->
-    "Email sent!"
